@@ -11,7 +11,6 @@ export const StateContext = ({ children }) => {
     const [qty, setQty] = useState(1);
 
     let foundProduct;
-    let index;
 
     const onAdd = (product, quantity) => {
         //check if product already in cart
@@ -84,7 +83,8 @@ export const StateContext = ({ children }) => {
                 setShowCart,
                 incQty,
                 decQty,
-                onAdd
+                onAdd,
+                toggleCartItemQuanitity
             }}
         >
             {children}
